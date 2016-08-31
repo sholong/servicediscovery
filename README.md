@@ -1,4 +1,4 @@
-# servicediscovery 服务发现
+# servicediscovery 服务发现 持续更新中
 thrift+python+redis 实现
 
 ## thrift 安装
