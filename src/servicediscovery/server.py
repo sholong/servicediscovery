@@ -14,16 +14,15 @@ class ServiceHandler:
         return "yes"
 
     def sign_up(self, service_name, service_url, expire_s=None):
-        return {"ret_code": 0, "ret_msg": u'服务注册成功',
-                "data": {"service_name": service_name,
-                         "service_url": service_url,
-                         "expire": 10
-                         }
+        return {'ret_code': '0', 'ret_msg': '服务注册成功',
+                'service_name': service_name,
+                'service_url': service_url,
+                'expire': '0'
                 }
 
     def find_service(self, service_name):
         service_info = ServiceInfo()
-        service_info.server_name = service_info
+        service_info.server_name = service_name
         service_info.server_url = "http://www.baidu.com"
         service_info.expire_s = 10
         return service_info
